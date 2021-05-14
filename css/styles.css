@@ -3,6 +3,9 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Cabin', 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #32373b;
 }
 
 .Site {
@@ -13,11 +16,15 @@ body {
 
 .Site-content {
   flex: 1;
+  width: 100%;
+  text-align: center;
 } 
 
 
 footer {
-  right: 0;bottom:0;left:0;
+  right: 0;
+  bottom:0;
+  left:0;
   padding: 8%;
 }
 
@@ -26,14 +33,7 @@ footer ul {
 	text-align: center;
 }
 
-/* base color styling */
-
-p, ul, li, a {
-	color: #32373B;
-	font-size:1.1em;
-}
-
-
+									
 button {
 	display: inline-block;
 	border: none;
@@ -50,50 +50,68 @@ button {
 	-moz-appearance: none;
 }
 
-/* styles for list items and navigation */
+
+/* flexible navigation styles */
+
+.open {
+color: #32373B;
+font-size: 40px;
+float: left;
+margin: 1em 1em;
+display: block;	
+cursor: pointer;
+}
+
+.nav {
+	width: 0;
+	overflow-x: hidden;
+	height: 100vh;
+	z-index: 1;
+	position: fixed;
+	background-color: #f6ae2d;
+	opacity: 90%;
+	transition: 0.5s;
+	display: block;
+}
+
+.close {
+	float:left;
+	margin: 1em 0 0 1em;
+}
+
+.nav a {
+	clear: left;
+	color: white;
+	display: block;
+	font-size: 1.5em;
+	text-decoration: none;
+	padding: 1em 0;
+	transition: 0.3s;
+}
+
+
+
+.nav a:not(:first-child):hover {
+	background-color: #32373b;
+}
+
+
+
 
 .inline-block {
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: bottom;
 	padding:5px;
 }
 
-
-.inline-block li a {
-	text-decoration: none;
-	z-index: 1;
-}
-
-.inline-block li a:hover {
-	color: #DBD3D8;
-	-webkit-transition: color 1s;
-	transition: color 1s;
-}
-
 .logo {
-	margin:0 auto;
+	
 	width: 22%;
 	padding:1%;
-	text-align: center;
-	
-}
-.logo img {
-	width: 100px;
-	vertical-align: top;
+	vertical-align: middle;
+
 }
 
-nav {
-	width:73%;
-	padding:1%;
-}
-
-ul {
-	width:50%;
-	margin-left:auto;
-}
-/* end styles for list items and navigation */
-
-/* styling for hero */
 
 .heroImg {
 
@@ -134,7 +152,6 @@ ul {
 }
 
 .heroSubtitle {
-	font-family: 'Cabin', sans-serif;
     font-size: 2rem;
     font-weight: 400;
     margin-top: 1rem;

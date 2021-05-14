@@ -7,43 +7,23 @@
 </head>
 <body class="Site">
 
-	<header>
+	<main class="Site-content">
 
-		<div class="inline-block logo">
+	
+		<div class="nav" id="nav">
+			<a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+			<a href="#">Home</a>
+			<a href="#">Projects</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+		</div>
+		<span id="open" class="open" onclick="openNav()">&#9776</span>
+	
+	<div class="inline-block logo">
 
 			<img src="images/Kyle_donlan_logo_concepts.png">
 
 		</div>
-
-		<nav class="inline-block">
-
-			<ul>
-				<li class="inline-block">
-					<a href="">
-						About
-					</a>
-				</li>
-				<li class="inline-block">
-					<a href="">
-						Skills
-					</a>
-				</li>
-				<li class="inline-block">
-					<a href="">
-						Work
-				 	</a>
-				</li>
-				<li class="inline-block">
-					<a href="">
-						Contact
-					</a>
-				</li>
-			</ul>
-
-		</nav>
-	</header>
-
-<main class="Site-content">
 
 	<section class="heroImg">
 
@@ -67,10 +47,7 @@
 			</div>			
 		</div>
 	</section>
-
-	<section>
-		<div></div>
-	</section>
+	
 </main>
 
 <footer>
@@ -81,5 +58,16 @@
 			<li class="inline-block">contact</li>
 		</ul>
 </footer>
+
+<script type="text/javascript">
+	function openNav() {
+		document.getElementById("open").style.display = "none";
+		document.getElementById("nav").style.width = "100%";
+	}
+	function closeNav() {
+		document.getElementById("nav").style.width = "0";
+		document.getElementById("open").style.display = "block";
+	}
+</script>
 </body>
 </html>
