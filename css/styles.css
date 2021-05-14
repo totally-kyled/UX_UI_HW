@@ -5,7 +5,7 @@ body {
     padding: 0;
     font-family: 'Cabin', 'Montserrat', sans-serif;
     font-size: 20px;
-    color: #32373b;
+    color: #32373b;;
 }
 
 .Site {
@@ -52,10 +52,17 @@ button {
 
 
 /* flexible navigation styles */
+#navBar {
+	width: 100%;
+	display: flex;
+	overflow: hidden;
+	background-color: grey;
+	border: 1px solid red;
+}
 
 .open {
 color: #32373B;
-font-size: 40px;
+font-size: 3em;
 float: left;
 margin: 1em 1em;
 display: block;	
@@ -89,14 +96,9 @@ cursor: pointer;
 	transition: 0.3s;
 }
 
-
-
 .nav a:not(:first-child):hover {
 	background-color: #32373b;
 }
-
-
-
 
 .inline-block {
 	display: inline-block;
@@ -105,13 +107,11 @@ cursor: pointer;
 }
 
 .logo {
-	
-	width: 22%;
-	padding:1%;
-	vertical-align: middle;
-
+	align-items: center;
+	flex: 1;
+	max-width: 200px;
+	height:100%;
 }
-
 
 .heroImg {
 
@@ -190,7 +190,6 @@ img {
 
 .flip-card-back {
   background-color: white;
-  color: white;
   transform: rotateY(180deg);
 }
 
