@@ -56,8 +56,7 @@ button {
 	width: 100%;
 	display: flex;
 	overflow: hidden;
-	background-color: grey;
-	border: 1px solid red;
+	background-color: #ffffff;
 }
 
 .open {
@@ -108,6 +107,7 @@ cursor: pointer;
 
 .logo {
 	align-items: center;
+	padding: 15px 0 0 0;
 	max-width: 200px;
 	height:100%;
 }
