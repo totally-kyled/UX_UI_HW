@@ -52,9 +52,11 @@ button {
 
 
 /* flexible navigation styles */
+
 #navBar {
 	width: 100%;
 	display: flex;
+	justify-content: space-between;
 	overflow: hidden;
 	background-color: #ffffff;
 }
@@ -106,7 +108,7 @@ cursor: pointer;
 }
 
 .logo {
-	align-items: center;
+	float: right;
 	padding: 15px 0 0 0;
 	max-width: 200px;
 	height:100%;
@@ -243,7 +245,10 @@ img {
 /* media queries */
 
 @media only screen and (min-width: 480px) {
-		
+	
+		.heroImg::before {
+
+		}
 
 }
 
